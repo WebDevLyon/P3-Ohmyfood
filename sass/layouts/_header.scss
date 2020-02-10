@@ -1,0 +1,11 @@
+.topbar
+{
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0;
+	background-color: $color-navbar;
+	&__logo
+	{
+		width: 30%;
+	}
+}

@@ -1,3 +1,199 @@
+@-webkit-keyframes wiggle {
+  0% {
+    left: 0; }
+  1% {
+    left: -3px; }
+  2% {
+    left: 5px; }
+  3% {
+    left: -8px; }
+  4% {
+    left: 8px; }
+  5% {
+    left: -5px; }
+  6% {
+    left: 3px; }
+  7% {
+    left: 0; } }
+@keyframes wiggle {
+  0% {
+    left: 0; }
+  1% {
+    left: -3px; }
+  2% {
+    left: 5px; }
+  3% {
+    left: -8px; }
+  4% {
+    left: 8px; }
+  5% {
+    left: -5px; }
+  6% {
+    left: 3px; }
+  7% {
+    left: 0; } }
+@-webkit-keyframes pulse {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    opacity: .25;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); } }
+@keyframes pulse {
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  to {
+    opacity: .25;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75); } }
+/* Reset style navigateur */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  color: #FEC85F; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Media Quieries */
+@media all and (max-width: 425px) {
+  body {
+    font-size: 18px; } }
+
+.shortly {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 0 1em 0; }
+  .shortly__heading {
+    background-color: #579C87;
+    border-radius: 5% / 24%;
+    padding: 1%; }
+  @media all and (max-width: 425px) {
+    .shortly {
+      font-size: 1em; } }
+
+.bubble {
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  background-color: #FEC85F; }
+
+.bubble-1 {
+  -webkit-animation: pulse .4s ease 0s infinite alternate;
+          animation: pulse .4s ease 0s infinite alternate; }
+
+.bubble-2 {
+  -webkit-animation: pulse .4s ease .2s infinite alternate;
+          animation: pulse .4s ease .2s infinite alternate; }
+
+.bubble-3 {
+  -webkit-animation: pulse .4s ease .4s infinite alternate;
+          animation: pulse .4s ease .4s infinite alternate; }
+
+.topbar {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #579C87; }
+  .topbar__logo {
+    width: 30%; }
+
+.footer {
+  background-color: #579C87;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem; }
+  .footer__contact, .footer__legal-notice {
+    position: relative; }
+    .footer__contact:hover, .footer__legal-notice:hover {
+      -webkit-animation: wiggle 5s ease-in;
+              animation: wiggle 5s ease-in; }
+  .footer a {
+    text-decoration: none;
+    color: #FEC85F; }
+  @media all and (max-width: 425px) {
+    .footer {
+      font-size: 1rem; } }
+
+main {
+  margin: 2rem 8% 5.5rem 8%; }
+
+.restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .restaurant__menu {
+    width: 45%;
+    margin: 1%;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden; }
+    .restaurant__menu img {
+      width: 100%;
+      -webkit-transition: 4s ease;
+      transition: 4s ease; }
+      .restaurant__menu img:hover {
+        -webkit-transform: scalex(1.3);
+                transform: scalex(1.3); }
 
 /*# sourceMappingURL=style.css.map */
