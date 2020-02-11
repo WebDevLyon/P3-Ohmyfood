@@ -6,7 +6,19 @@
 	line-height: 3rem;
 	font-size: 1.5rem;
 	font-weight: lighter;
-	&__header, &__footer
+	&__header__name{
+		font-size:3rem;
+		padding-bottom: 3rem;
+	}
+	&__footer, &__footer .note-enchantee__logo{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+	}
+	&__header
 	{
 		text-align: center;
 	}
@@ -25,6 +37,10 @@
 		&__prix
 		{
 			font-weight: bold;
+			@media all and (max-width: 425px)
+			{
+				text-align: right;
+			}
 		}
 	}
 	& .line
@@ -35,6 +51,10 @@
 		width: 33%;
 		background-color: black;
 	}
+	& .flex-row{
+		display: flex;
+		align-items: center;
+	}
 }
 
 .note-enchantee
@@ -43,6 +63,9 @@
 	&__logo
 	{
 		font-size: 9rem;
+		background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }
 .menu-section

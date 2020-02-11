@@ -178,7 +178,23 @@ table {
   line-height: 3rem;
   font-size: 1.5rem;
   font-weight: lighter; }
-  .menu__header, .menu__footer {
+  .menu__header__name {
+    font-size: 3rem;
+    padding-bottom: 3rem; }
+  .menu__footer, .menu__footer .note-enchantee__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem; }
+  .menu__header {
     text-align: center; }
   .menu .desktop-row {
     display: -webkit-box;
@@ -196,17 +212,31 @@ table {
         display: block; } }
     .menu .desktop-row__prix {
       font-weight: bold; }
+      @media all and (max-width: 425px) {
+        .menu .desktop-row__prix {
+          text-align: right; } }
   .menu .line {
     display: inline-block;
     border: none;
     height: 0.3rem;
     width: 33%;
     background-color: black; }
+  .menu .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .note-enchantee {
   font-family: "kalam", cursive; }
   .note-enchantee__logo {
-    font-size: 9rem; }
+    font-size: 9rem;
+    background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+    background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 .menu-section {
   -webkit-box-flex: 1;
