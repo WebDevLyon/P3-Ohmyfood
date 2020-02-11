@@ -6,11 +6,7 @@
 	line-height: 3rem;
 	font-size: 1.5rem;
 	font-weight: lighter;
-	&__header
-	{
-		text-align: center;
-	}
-	&__footer
+	&__header, &__footer
 	{
 		text-align: center;
 	}
@@ -31,7 +27,7 @@
 			font-weight: bold;
 		}
 	}
-	& hr
+	& .line
 	{
 		display: inline-block;
 		border: none;
@@ -41,6 +37,33 @@
 	}
 }
 
-.note-enchantee{
+.note-enchantee
+{
 	font-family: "kalam", cursive;
+	&__logo
+	{
+		font-size: 9rem;
+	}
+}
+.menu-section
+{
+	flex-grow:1;
+	text-align: center;
+	position: relative;
+	&::after{
+		content: "";
+		background-color: #3d1319;
+		height: 2px;
+		width: 0%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		transition: width 150ms;
+	}
+	&:hover{
+		&::after
+		{
+			width: 100%;
+		}
+	}
 }

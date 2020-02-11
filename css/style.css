@@ -178,9 +178,7 @@ table {
   line-height: 3rem;
   font-size: 1.5rem;
   font-weight: lighter; }
-  .menu__header {
-    text-align: center; }
-  .menu__footer {
+  .menu__header, .menu__footer {
     text-align: center; }
   .menu .desktop-row {
     display: -webkit-box;
@@ -198,7 +196,7 @@ table {
         display: block; } }
     .menu .desktop-row__prix {
       font-weight: bold; }
-  .menu hr {
+  .menu .line {
     display: inline-block;
     border: none;
     height: 0.3rem;
@@ -207,6 +205,27 @@ table {
 
 .note-enchantee {
   font-family: "kalam", cursive; }
+  .note-enchantee__logo {
+    font-size: 9rem; }
+
+.menu-section {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  position: relative; }
+  .menu-section::after {
+    content: "";
+    background-color: #3d1319;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width 150ms;
+    transition: width 150ms; }
+  .menu-section:hover::after {
+    width: 100%; }
 
 main {
   margin: 2rem 8% 5.5rem 8%;
