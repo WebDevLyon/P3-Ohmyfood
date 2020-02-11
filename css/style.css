@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap");
 @-webkit-keyframes wiggle {
   0% {
     left: 0; }
@@ -50,6 +51,7 @@
     opacity: .25;
     -webkit-transform: scale(0.75);
             transform: scale(0.75); } }
+/* Font */
 /* Reset style navigateur */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -76,8 +78,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1;
-  color: #FEC85F; }
+  line-height: 1; }
 
 ol, ul {
   list-style: none; }
@@ -155,9 +156,9 @@ table {
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 2.5em;
+  font-size: 2em;
   font-family: "Roboto", sans-serif;
-  padding: 1rem; }
+  padding: 1.5rem; }
   .footer__contact, .footer__legal-notice {
     position: relative; }
     .footer__contact:hover, .footer__legal-notice:hover {
@@ -170,8 +171,46 @@ table {
     .footer {
       font-size: 1rem; } }
 
+.menu {
+  color: #3d1319;
+  background-color: #fcdfdb;
+  padding: 5% 10%;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-weight: lighter; }
+  .menu__header {
+    text-align: center; }
+  .menu__footer {
+    text-align: center; }
+  .menu .desktop-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .menu .desktop-row__plat {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    @media all and (max-width: 425px) {
+      .menu .desktop-row {
+        display: block; } }
+    .menu .desktop-row__prix {
+      font-weight: bold; }
+  .menu hr {
+    display: inline-block;
+    border: none;
+    height: 0.3rem;
+    width: 33%;
+    background-color: black; }
+
+.note-enchantee {
+  font-family: "kalam", cursive; }
+
 main {
-  margin: 2rem 8% 5.5rem 8%; }
+  margin: 2rem 8% 5.5rem 8%;
+  color: #FEC85F; }
 
 .restaurant {
   display: -webkit-box;

@@ -1,0 +1,46 @@
+.menu
+{
+	color: #3d1319;
+	background-color: #fcdfdb;
+	padding: 5% 10%;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	font-weight: lighter;
+	&__header
+	{
+		text-align: center;
+	}
+	&__footer
+	{
+		text-align: center;
+	}
+	& .desktop-row
+	{
+		display: flex;
+		align-items: center;
+		&__plat
+		{
+			flex-grow: 1;
+		}
+		@media all and (max-width: 425px)
+		{
+			display: block;
+		}
+		&__prix
+		{
+			font-weight: bold;
+		}
+	}
+	& hr
+	{
+		display: inline-block;
+		border: none;
+		height: 0.3rem;
+		width: 33%;
+		background-color: black;
+	}
+}
+
+.note-enchantee{
+	font-family: "kalam", cursive;
+}

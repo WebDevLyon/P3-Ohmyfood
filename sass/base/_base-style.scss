@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap');
+
 /* Reset style navigateur */ 
 
 html, body, div, span, applet, object, iframe,
@@ -29,7 +32,6 @@ footer, header, hgroup, menu, nav, section
 
 body {
 	line-height: 1;
-	color:$color-text;
 }
 ol, ul {
 	list-style: none;
