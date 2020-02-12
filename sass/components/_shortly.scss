@@ -6,12 +6,12 @@
 	margin: 1em 0 1em 0;
 	&__heading
 	{
-		background-color: $color-navbar;
+		@extend %color-index-component;
 		border-radius: 5% / 24%;
 		padding: 1%;
 
 	}
-	@media all and (max-width: 425px) {
+	@include tablet {
 		font-size: $font-size-mobile;
 	}
 
@@ -23,7 +23,7 @@
 	width: 0.4em;
 	height: 0.4em;
 	border-radius: 50%;
-	background-color: $color-text;
+	background-color: $color-index;
 }
 
 .bubble-1 {

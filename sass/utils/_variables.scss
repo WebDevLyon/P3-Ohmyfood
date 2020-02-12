@@ -1,9 +1,42 @@
+//Couleur
+
+
 $color-navbar : #579C87;
-$color-text: #FEC85F;
+$color-index: #FEC85F;
+
+
+$restaurant-palette: (
+	  'note-enchantee': (
+		'bgc':#fcdfdb,
+		'color-text':#3d1319,
+		'color-trait-1':#3d1319,
+		'color-trait-2':#3d1319,
+		'color-trait-3':#3d1319,
+		),
+	  'chic-francais': (
+		'bgc':#fff5fe,
+		'color-starter':#c67412,
+		'color-trait-2':#a56799,
+		'color-trait-3':#6e4ccc,
+		),
+	  'delice-papilles': (
+		'bgc':#edefef,  
+		'color-trait-1':#0228dd,
+		'color-trait-2':#0670f3,
+		'color-trait-3':#0670f3,
+		),
+	  'palette-gout': (
+		'bgc':#fcdfdb,
+		'color-trait-1':#3d1319,
+		'color-trait-2':#3d1319,
+		'color-trait-3':#3d1319,
+		)
+	);
+
+
+//Fonts
 $font : 'Roboto', sans-serif;
 $font-size-mobile :1em;
 
-$breakpoints: (
-	"mobile": 425px,
-	"tablet": 768px,
-);
+
+

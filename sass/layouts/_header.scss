@@ -3,7 +3,7 @@
 	width: 100%;
 	text-align: center;
 	padding: 1rem 0;
-	background-color: $color-navbar;
+	@extend %color-index-component;
 	&__logo
 	{
 		width: 30%;

@@ -1,3 +1,4 @@
+
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap');
 
@@ -47,6 +48,11 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+main
+{
+	margin: 2rem 8% 5.5rem 8%;
 }
 
 /* Media Quieries */

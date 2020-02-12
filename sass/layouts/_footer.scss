@@ -1,6 +1,6 @@
 .footer
 {
-	background-color: $color-navbar;
+	@extend %color-index-component;
 	position: fixed;
 	display: flex; 
 	justify-content: space-between;
@@ -19,9 +19,9 @@
 	}
 	a{
 		text-decoration: none;
-		color :$color-text;
+		color :$color-index;
 	}
-	@media all and (max-width: 425px){
+	@include tablet{
 		font-size: 1rem;
 	}
 }
