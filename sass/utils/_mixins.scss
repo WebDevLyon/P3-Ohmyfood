@@ -10,8 +10,8 @@
 // Generation valeur des couleurs des restaurants
 
 @mixin menu-restaurant($nom-restaurant){
-	background-color: #fff5fe;
-	font-family: "kalam", cursive;
+	background-color: map-get($nom-restaurant,'bgc');
+	font-family: map-get($nom-restaurant,'font');
 	& .menu__header
 	{
 		text-align: center;
@@ -32,27 +32,33 @@
 			@include tablet{text-align: right;}
 		}
 	}
+	& .menu__starter {
+		color:map-get($nom-restaurant,'color-text-starter');
 	& .line{
 		display: inline-block;
 		border: none;
 		height: 0.3rem;
 		width: 33%;
-		background-color: #c67412;
-	}
-	& .menu__course .line{
+		background-color: map-get($nom-restaurant,'color-trait-starter');
+	}}
+	& .menu__course {
+	color:map-get($nom-restaurant,'color-text-course');
+	& .line{
 		display: inline-block;
 		border: none;
 		height: 0.3rem;
 		width: 33%;
-		background-color: #a56799;
-	}
-	& .menu__dessert .line{
+		background: map-get($nom-restaurant,'color-trait-course');
+	}}
+	& .menu__dessert {
+		color:map-get($nom-restaurant,'color-text-dessert');
+		& .line{
 		display: inline-block;
 		border: none;
 		height: 0.3rem;
 		width: 33%;
-		background-color: #6e4ccc;
-	}
+		background-color: map-get($nom-restaurant,'color-trait-dessert');
+	}}
 	& .flex-row{
 		display: flex;
 		align-items: center;

@@ -4,33 +4,47 @@
 $color-navbar : #579C87;
 $color-index: #FEC85F;
 
+$note-enchantee: (
+	'font': sans-serif,
+	'bgc':#fcdfdb,
+	'color-text-starter':#3d1319,
+	'color-trait-starter':#3d1319,
+	'color-text-course':#3d1319,
+	'color-trait-course':#3d1319,
+	'color-text-dessert':#3d1319,
+	'color-trait-dessert':#3d1319,
+	);
 
-$restaurant-palette: (
-	  'note-enchantee': (
-		'bgc':#fcdfdb,
-		'color-text':#3d1319,
-		'color-trait-1':#3d1319,
-		'color-trait-2':#3d1319,
-		'color-trait-3':#3d1319,
-		),
-	  'chic-francais': (
-		'bgc':#fff5fe,
-		'color-starter':#c67412,
-		'color-trait-2':#a56799,
-		'color-trait-3':#6e4ccc,
-		),
-	  'delice-papilles': (
-		'bgc':#edefef,  
-		'color-trait-1':#0228dd,
-		'color-trait-2':#0670f3,
-		'color-trait-3':#0670f3,
-		),
-	  'palette-gout': (
-		'bgc':#fcdfdb,
-		'color-trait-1':#3d1319,
-		'color-trait-2':#3d1319,
-		'color-trait-3':#3d1319,
-		)
+$chic-francais: (
+	'font': sans-serif,
+	'bgc':#fff5fe,
+	'color-text-starter':#c67412,
+	'color-trait-starter':#c67412,
+	'color-text-course':#a56799,
+	'color-trait-course':#a56799,
+	'color-text-dessert':#6e4ccc,
+	'color-trait-dessert':#6e4ccc,
+	);
+
+$delice-papilles: (
+	'font': sans-serif,
+	'bgc':#edefef,  
+	'color-text-starter':#000000,
+	'color-trait-starter':#0228dd,
+	'color-text-course':#000000,
+	'color-trait-course':#0670f3,
+	'color-text-dessert':#000000,
+	'color-trait-dessert':#229df9,);
+
+$palette-gout: (
+	'font': sans-serif,
+	'bgc':#fdfffd,
+	'color-text-starter':#000000,
+	'color-trait-starter':linear-gradient(to right, #41963c, white),
+	'color-text-course':#000000,
+	'color-trait-course':linear-gradient(to right, #41963c, white),
+	'color-text-dessert':#000000,
+	'color-trait-dessert':linear-gradient(to right, #41963c, white),
 	);
 
 

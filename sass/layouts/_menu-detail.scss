@@ -38,7 +38,19 @@
 	}*/
 
 	&--chic-francais{
-		@include menu-restaurant (chic-francais);
+		@include menu-restaurant ($chic-francais);
+
+	}
+		&--note-enchantee{
+		@include menu-restaurant ($note-enchantee);
+
+	}
+		&--delice-papilles{
+		@include menu-restaurant ($delice-papilles);
+
+	}
+		&--palette-gout{
+		@include menu-restaurant ($palette-gout);
 
 	}
 }
