@@ -1,5 +1,5 @@
 /* Placeholders*/
-@import url("https://fonts.googleapis.com/css?family=Kalam:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Roboto&display=swap");
 .shortly__heading, .topbar, .footer {
   background-color: #579C87;
   color: #FEC85F; }
@@ -105,7 +105,7 @@ main {
   margin: 2rem 8% 5.5rem 8%; }
 
 /* Media Quieries */
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
   body {
     font-size: 18px; } }
 
@@ -179,17 +179,19 @@ main {
 
 .menu {
   padding: 5% 10%;
-  /*&--note-enchantee{
-  	line-height: 3rem;
-  	font-size: 1.5rem;
-  	font-weight: lighter;
-  	color: #3d1319;
-  	background-color: #fcdfdb;
-  	&__header__name{
-  		font-size:3rem;
-  		padding-bottom: 3rem;
-  	}
-  }*/ }
+  font-size: 1.5rem;
+  line-height: 3rem; }
+  .menu__header {
+    text-align: center;
+    padding: 3rem 0 5rem 0; }
+    .menu__header__header__name {
+      font-size: 3rem;
+      padding-bottom: 3rem; }
+  .menu .line-left, .menu .line-right {
+    display: inline-block;
+    border: none;
+    height: 0.3rem;
+    width: 33%; }
   .menu-section {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -210,9 +212,14 @@ main {
       width: 100%; }
   .menu--chic-francais {
     background-color: #fff5fe;
-    font-family: sans-serif; }
+    font-family: "Roboto", sans-serif; }
     .menu--chic-francais .menu__header {
-      text-align: center; }
+      font-size: 4rem;
+      background: red;
+      -webkit-background-clip: text;
+      color: transparent; }
+      .menu--chic-francais .menu__header__logo {
+        font-size: 9rem; }
     .menu--chic-francais .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -237,53 +244,34 @@ main {
             text-align: right; } }
     .menu--chic-francais .menu__starter {
       color: #c67412; }
-      .menu--chic-francais .menu__starter .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: #c67412; }
+      .menu--chic-francais .menu__starter .line-left {
+        background: #c67412; }
+      .menu--chic-francais .menu__starter .line-right {
+        background: #c67412; }
     .menu--chic-francais .menu__course {
       color: #a56799; }
-      .menu--chic-francais .menu__course .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
+      .menu--chic-francais .menu__course .line-left {
+        background: #a56799; }
+      .menu--chic-francais .menu__course .line-right {
         background: #a56799; }
     .menu--chic-francais .menu__dessert {
       color: #6e4ccc; }
-      .menu--chic-francais .menu__dessert .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: #6e4ccc; }
-    .menu--chic-francais .flex-row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .menu--chic-francais .menu__footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 1rem; }
+      .menu--chic-francais .menu__dessert .line-left {
+        background: #6e4ccc; }
+      .menu--chic-francais .menu__dessert .line-right {
+        background: #6e4ccc; }
   .menu--note-enchantee {
     background-color: #fcdfdb;
-    font-family: sans-serif; }
+    font-family: "Dancing Script", cursive; }
     .menu--note-enchantee .menu__header {
-      text-align: center; }
+      font-size: 4rem;
+      color: #3d1319; }
+      .menu--note-enchantee .menu__header__logo {
+        font-size: 9rem;
+        background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+        background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+        -webkit-background-clip: text;
+        color: transparent; }
     .menu--note-enchantee .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -308,53 +296,32 @@ main {
             text-align: right; } }
     .menu--note-enchantee .menu__starter {
       color: #3d1319; }
-      .menu--note-enchantee .menu__starter .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: #3d1319; }
+      .menu--note-enchantee .menu__starter .line-left {
+        background: #3d1319; }
+      .menu--note-enchantee .menu__starter .line-right {
+        background: #3d1319; }
     .menu--note-enchantee .menu__course {
       color: #3d1319; }
-      .menu--note-enchantee .menu__course .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
+      .menu--note-enchantee .menu__course .line-left {
+        background: #3d1319; }
+      .menu--note-enchantee .menu__course .line-right {
         background: #3d1319; }
     .menu--note-enchantee .menu__dessert {
       color: #3d1319; }
-      .menu--note-enchantee .menu__dessert .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: #3d1319; }
-    .menu--note-enchantee .flex-row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .menu--note-enchantee .menu__footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 1rem; }
+      .menu--note-enchantee .menu__dessert .line-left {
+        background: #3d1319; }
+      .menu--note-enchantee .menu__dessert .line-right {
+        background: #3d1319; }
   .menu--delice-papilles {
     background-color: #edefef;
-    font-family: sans-serif; }
+    font-family: "Dancing Script", cursive; }
     .menu--delice-papilles .menu__header {
-      text-align: center; }
+      font-size: 4rem;
+      background: red;
+      -webkit-background-clip: text;
+      color: transparent; }
+      .menu--delice-papilles .menu__header__logo {
+        font-size: 9rem; }
     .menu--delice-papilles .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -379,53 +346,33 @@ main {
             text-align: right; } }
     .menu--delice-papilles .menu__starter {
       color: #000000; }
-      .menu--delice-papilles .menu__starter .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: #0228dd; }
+      .menu--delice-papilles .menu__starter .line-left {
+        background: #0228dd; }
+      .menu--delice-papilles .menu__starter .line-right {
+        background: #0228dd; }
     .menu--delice-papilles .menu__course {
       color: #000000; }
-      .menu--delice-papilles .menu__course .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
+      .menu--delice-papilles .menu__course .line-left {
+        background: #0670f3; }
+      .menu--delice-papilles .menu__course .line-right {
         background: #0670f3; }
     .menu--delice-papilles .menu__dessert {
       color: #000000; }
-      .menu--delice-papilles .menu__dessert .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: #229df9; }
-    .menu--delice-papilles .flex-row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .menu--delice-papilles .menu__footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 1rem; }
+      .menu--delice-papilles .menu__dessert .line-left {
+        background: #229df9; }
+      .menu--delice-papilles .menu__dessert .line-right {
+        background: #229df9; }
   .menu--palette-gout {
     background-color: #fdfffd;
-    font-family: sans-serif; }
+    font-family: "Dancing Script", cursive; }
     .menu--palette-gout .menu__header {
-      text-align: center; }
+      font-size: 4rem;
+      background: -webkit-gradient(linear, right top, left top, from(#beff7f), to(#45993e));
+      background: linear-gradient(to left, #beff7f 0%, #45993e 100%);
+      -webkit-background-clip: text;
+      color: transparent; }
+      .menu--palette-gout .menu__header__logo {
+        font-size: 9rem; }
     .menu--palette-gout .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -450,58 +397,54 @@ main {
             text-align: right; } }
     .menu--palette-gout .menu__starter {
       color: #000000; }
-      .menu--palette-gout .menu__starter .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: linear-gradient(to right, #41963c, white); }
+      .menu--palette-gout .menu__starter .line-left {
+        background: -webkit-gradient(linear, right top, left top, from(#41963c), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(to left, #41963c, rgba(0, 0, 0, 0)); }
+      .menu--palette-gout .menu__starter .line-right {
+        background: -webkit-gradient(linear, left top, right top, from(#41963c), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(to right, #41963c, rgba(0, 0, 0, 0)); }
     .menu--palette-gout .menu__course {
       color: #000000; }
-      .menu--palette-gout .menu__course .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background: -webkit-gradient(linear, left top, right top, from(#41963c), to(white));
-        background: linear-gradient(to right, #41963c, white); }
+      .menu--palette-gout .menu__course .line-left {
+        background: -webkit-gradient(linear, right top, left top, from(#41963c), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(to left, #41963c, rgba(0, 0, 0, 0)); }
+      .menu--palette-gout .menu__course .line-right {
+        background: -webkit-gradient(linear, left top, right top, from(#41963c), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(to right, #41963c, rgba(0, 0, 0, 0)); }
     .menu--palette-gout .menu__dessert {
       color: #000000; }
-      .menu--palette-gout .menu__dessert .line {
-        display: inline-block;
-        border: none;
-        height: 0.3rem;
-        width: 33%;
-        background-color: linear-gradient(to right, #41963c, white); }
-    .menu--palette-gout .flex-row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-    .menu--palette-gout .menu__footer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 1rem; }
-
-.note-enchantee {
-  font-family: "kalam", cursive; }
-  .note-enchantee__logo {
-    font-size: 9rem;
-    background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
-    background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+      .menu--palette-gout .menu__dessert .line-left {
+        background: -webkit-gradient(linear, right top, left top, from(#41963c), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(to left, #41963c, rgba(0, 0, 0, 0)); }
+      .menu--palette-gout .menu__dessert .line-right {
+        background: -webkit-gradient(linear, left top, right top, from(#41963c), to(rgba(0, 0, 0, 0)));
+        background: linear-gradient(to right, #41963c, rgba(0, 0, 0, 0)); }
+  .menu .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .menu .menu__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem; }
+    .menu .menu__footer__logo {
+      font-size: 9rem;
+      background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+      background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 .restaurant {
   display: -webkit-box;
@@ -520,9 +463,10 @@ main {
     overflow: hidden; }
     .restaurant__menu img {
       width: 100%;
-      -webkit-transition: 4s ease;
-      transition: 4s ease; }
+      -webkit-transition: 0.2s ease;
+      transition: 0.2s ease; }
       .restaurant__menu img:hover {
-        -webkit-transform: scalex(1.3);
-                transform: scalex(1.3); }
+        -webkit-transform: scalex(1.2);
+                transform: scalex(1.2); }
+
 /*# sourceMappingURL=style.css.map */

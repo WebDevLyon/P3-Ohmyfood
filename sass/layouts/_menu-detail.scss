@@ -1,7 +1,22 @@
 .menu
 {
 	padding: 5% 10%;
-	
+	font-size: 1.5rem;
+	line-height: 3rem;
+	&__header{
+		text-align: center;
+		padding:3rem 0 5rem 0;
+		&__header__name{
+			font-size:3rem;
+			padding-bottom: 3rem;
+		}
+	}
+	& .line-left, & .line-right{
+		display: inline-block;
+		border: none;
+		height: 0.3rem;
+		width: 33%;
+	}	
 	&-section
 	{
 		flex-grow:1;
@@ -23,47 +38,38 @@
 				width: 100%;
 			}
 		}
-
 	}
-	/*&--note-enchantee{
-		line-height: 3rem;
-		font-size: 1.5rem;
-		font-weight: lighter;
-		color: #3d1319;
-		background-color: #fcdfdb;
-		&__header__name{
-			font-size:3rem;
-			padding-bottom: 3rem;
-		}
-	}*/
-
 	&--chic-francais{
 		@include menu-restaurant ($chic-francais);
-
 	}
-		&--note-enchantee{
+	&--note-enchantee{
 		@include menu-restaurant ($note-enchantee);
-
 	}
-		&--delice-papilles{
+	&--delice-papilles{
 		@include menu-restaurant ($delice-papilles);
-
 	}
-		&--palette-gout{
+	&--palette-gout{
 		@include menu-restaurant ($palette-gout);
-
+	}
+	& .flex-row{
+		display: flex;
+		align-items: center;
+	}
+	& .menu__footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-weight: bold;
+		margin: 1rem;
+		&__logo
+		{
+			font-size: 9rem;
+			background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 }
 
-.note-enchantee
-{
-	font-family: "kalam", cursive;
-	&__logo
-	{
-		font-size: 9rem;
-		background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-}
 

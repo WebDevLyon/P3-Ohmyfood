@@ -1,5 +1,11 @@
 //Raccourcies de frappe
 
+@mixin degrade($nom-restaurant, $item){
+	background:map-get($nom-restaurant,$item);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
 @mixin tablet{
 	@media all and (max-width: 768px)
 	{
@@ -12,9 +18,23 @@
 @mixin menu-restaurant($nom-restaurant){
 	background-color: map-get($nom-restaurant,'bgc');
 	font-family: map-get($nom-restaurant,'font');
-	& .menu__header
-	{
-		text-align: center;
+	& .menu__header{
+		font-size: 4rem;	
+		@if(map-get($nom-restaurant,"color-heading-degrade")==true)
+		{
+			@include degrade($nom-restaurant, color-heading);
+		}
+		@else{
+			color: map-get($nom-restaurant,'color-heading');
+		}
+		&__logo
+		{
+			font-size: 9rem;
+			@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+			{
+				@include degrade($nom-restaurant, color-logo);
+			}
+		}
 	}
 	& .desktop-row
 	{
@@ -34,42 +54,35 @@
 	}
 	& .menu__starter {
 		color:map-get($nom-restaurant,'color-text-starter');
-	& .line{
-		display: inline-block;
-		border: none;
-		height: 0.3rem;
-		width: 33%;
-		background-color: map-get($nom-restaurant,'color-trait-starter');
-	}}
+		& .line-left
+		{
+			background: map-get($nom-restaurant,'color-trait-starter-left');
+		}
+		& .line-right
+		{
+			background: map-get($nom-restaurant,'color-trait-starter-right');
+		}
+	}
 	& .menu__course {
-	color:map-get($nom-restaurant,'color-text-course');
-	& .line{
-		display: inline-block;
-		border: none;
-		height: 0.3rem;
-		width: 33%;
-		background: map-get($nom-restaurant,'color-trait-course');
-	}}
+		color:map-get($nom-restaurant,'color-text-course');
+		& .line-left
+		{
+			background: map-get($nom-restaurant,'color-trait-course-left');
+		}
+		& .line-right
+		{
+			background: map-get($nom-restaurant,'color-trait-course-right');
+		}
+	}
 	& .menu__dessert {
 		color:map-get($nom-restaurant,'color-text-dessert');
-		& .line{
-		display: inline-block;
-		border: none;
-		height: 0.3rem;
-		width: 33%;
-		background-color: map-get($nom-restaurant,'color-trait-dessert');
-	}}
-	& .flex-row{
-		display: flex;
-		align-items: center;
+		& .line-left
+		{
+			background: map-get($nom-restaurant,'color-trait-dessert-left');
+		}
+		& .line-right
+		{
+			background: map-get($nom-restaurant,'color-trait-dessert-right');
+		}
 	}
-	& .menu__footer {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 2rem;
-		font-weight: bold;
-		margin: 1rem;
-	}
-}
-;
+};
