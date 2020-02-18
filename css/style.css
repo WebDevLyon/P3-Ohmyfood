@@ -59,8 +59,10 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75); } }
 /* Font */
-/* Reset style navigateur */
-/* line 7, ../sass/base/_base-style.scss */
+/* 
+Reset style navigateur 
+*/
+/* line 9, ../sass/base/_base-style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -81,41 +83,41 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 28, ../sass/base/_base-style.scss */
+/* line 30, ../sass/base/_base-style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 34, ../sass/base/_base-style.scss */
+/* line 36, ../sass/base/_base-style.scss */
 body {
   line-height: 1; }
 
-/* line 37, ../sass/base/_base-style.scss */
+/* line 39, ../sass/base/_base-style.scss */
 ol, ul {
   list-style: none; }
 
-/* line 40, ../sass/base/_base-style.scss */
+/* line 42, ../sass/base/_base-style.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 43, ../sass/base/_base-style.scss */
+/* line 45, ../sass/base/_base-style.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 48, ../sass/base/_base-style.scss */
+/* line 50, ../sass/base/_base-style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 53, ../sass/base/_base-style.scss */
+/* line 55, ../sass/base/_base-style.scss */
 main {
   margin: 2rem 8% 5.5rem 8%; }
 
 /* Media Quieries */
 @media all and (max-width: 768px) {
-  /* line 59, ../sass/base/_base-style.scss */
+  /* line 61, ../sass/base/_base-style.scss */
   body {
     font-size: 18px; } }
 
