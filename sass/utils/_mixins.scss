@@ -1,9 +1,17 @@
 //Raccourcies de frappe
 
 @mixin degrade($nom-restaurant, $item){
-	background:map-get($nom-restaurant,$item);
-	-webkit-background-clip: text;
-	color: transparent;
+	&::before{
+		content:"";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: map-get($nom-restaurant,$item);
+		mix-blend-mode: screen;
+	}
 }
 
 @mixin tablet{
@@ -19,70 +27,75 @@
 	background-color: map-get($nom-restaurant,'bgc');
 	font-family: map-get($nom-restaurant,'font');
 	& .menu__header{
-		font-size: 4rem;	
-		@if(map-get($nom-restaurant,"color-heading-degrade")==true)
-		{
-			@include degrade($nom-restaurant, color-heading);
-		}
-		@else{
-			color: map-get($nom-restaurant,'color-heading');
-		}
-		&__logo
-		{
-			font-size: 9rem;
-			@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+		font-size: 4rem;
+		&__name{
+			position:relative;
+			padding:1rem;
+			background: white;
+			mix-blend-mode: multiply;	
+			@if(map-get($nom-restaurant,"color-heading-degrade")==true)
 			{
-				@include degrade($nom-restaurant, color-logo);
+				@include degrade($nom-restaurant, color-heading);
+			}
+			@else{
+				color: map-get($nom-restaurant,'color-heading');
+			}}
+			/*&__logo
+			{
+				font-size: 9rem;
+				@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+				{
+					@include degrade($nom-restaurant, color-logo);
+				}
+			}*/
+		}
+		& .desktop-row
+		{
+			display: flex;
+			align-items: center;
+			@include tablet{display:block;}
+			&__plat
+			{
+				flex-grow: 1;
+				@include tablet{font-size: 1.1rem;}
+			}
+			&__prix
+			{
+				font-weight: bold;
+				@include tablet{text-align: right;}
 			}
 		}
-	}
-	& .desktop-row
-	{
-		display: flex;
-		align-items: center;
-		@include tablet{display:block;}
-		&__plat
-		{
-			flex-grow: 1;
-			@include tablet{font-size: 1.1rem;}
+		& .menu__starter {
+			color:map-get($nom-restaurant,'color-text-starter');
+			& .line-left
+			{
+				background: map-get($nom-restaurant,'color-trait-starter-left');
+			}
+			& .line-right
+			{
+				background: map-get($nom-restaurant,'color-trait-starter-right');
+			}
 		}
-		&__prix
-		{
-			font-weight: bold;
-			@include tablet{text-align: right;}
+		& .menu__course {
+			color:map-get($nom-restaurant,'color-text-course');
+			& .line-left
+			{
+				background: map-get($nom-restaurant,'color-trait-course-left');
+			}
+			& .line-right
+			{
+				background: map-get($nom-restaurant,'color-trait-course-right');
+			}
 		}
-	}
-	& .menu__starter {
-		color:map-get($nom-restaurant,'color-text-starter');
-		& .line-left
-		{
-			background: map-get($nom-restaurant,'color-trait-starter-left');
+		& .menu__dessert {
+			color:map-get($nom-restaurant,'color-text-dessert');
+			& .line-left
+			{
+				background: map-get($nom-restaurant,'color-trait-dessert-left');
+			}
+			& .line-right
+			{
+				background: map-get($nom-restaurant,'color-trait-dessert-right');
+			}
 		}
-		& .line-right
-		{
-			background: map-get($nom-restaurant,'color-trait-starter-right');
-		}
-	}
-	& .menu__course {
-		color:map-get($nom-restaurant,'color-text-course');
-		& .line-left
-		{
-			background: map-get($nom-restaurant,'color-trait-course-left');
-		}
-		& .line-right
-		{
-			background: map-get($nom-restaurant,'color-trait-course-right');
-		}
-	}
-	& .menu__dessert {
-		color:map-get($nom-restaurant,'color-text-dessert');
-		& .line-left
-		{
-			background: map-get($nom-restaurant,'color-trait-dessert-left');
-		}
-		& .line-right
-		{
-			background: map-get($nom-restaurant,'color-trait-dessert-right');
-		}
-	}
-};
+	};
