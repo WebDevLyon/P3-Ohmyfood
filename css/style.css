@@ -1,6 +1,5 @@
 /* Placeholders*/
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Roboto&display=swap");
-/* line 3, ../sass/utils/_placeholders.scss */
 .shortly__heading, .topbar, .footer {
   background-color: #579C87;
   color: #FEC85F; }
@@ -62,7 +61,6 @@
 /* 
 Reset style navigateur 
 */
-/* line 9, ../sass/base/_base-style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -83,45 +81,36 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-/* line 30, ../sass/base/_base-style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-/* line 36, ../sass/base/_base-style.scss */
 body {
   line-height: 1; }
 
-/* line 39, ../sass/base/_base-style.scss */
 ol, ul {
   list-style: none; }
 
-/* line 42, ../sass/base/_base-style.scss */
 blockquote, q {
   quotes: none; }
 
-/* line 45, ../sass/base/_base-style.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
-/* line 50, ../sass/base/_base-style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 55, ../sass/base/_base-style.scss */
 main {
   margin: 2rem 8% 5.5rem 8%; }
 
 /* Media Quieries */
 @media all and (max-width: 768px) {
-  /* line 61, ../sass/base/_base-style.scss */
   body {
     font-size: 18px; } }
 
-/* line 1, ../sass/components/_shortly.scss */
 .shortly {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,16 +120,13 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 1em 0 1em 0; }
-  /* line 7, ../sass/components/_shortly.scss */
   .shortly__heading {
     border-radius: 5% / 24%;
     padding: 1%; }
   @media all and (max-width: 768px) {
-    /* line 1, ../sass/components/_shortly.scss */
     .shortly {
       font-size: 1em; } }
 
-/* line 21, ../sass/components/_shortly.scss */
 .bubble {
   display: inline-block;
   width: 0.4em;
@@ -148,31 +134,25 @@ main {
   border-radius: 50%;
   background-color: #FEC85F; }
 
-/* line 29, ../sass/components/_shortly.scss */
 .bubble-1 {
   -webkit-animation: pulse .4s ease 0s infinite alternate;
           animation: pulse .4s ease 0s infinite alternate; }
 
-/* line 32, ../sass/components/_shortly.scss */
 .bubble-2 {
   -webkit-animation: pulse .4s ease .2s infinite alternate;
           animation: pulse .4s ease .2s infinite alternate; }
 
-/* line 35, ../sass/components/_shortly.scss */
 .bubble-3 {
   -webkit-animation: pulse .4s ease .4s infinite alternate;
           animation: pulse .4s ease .4s infinite alternate; }
 
-/* line 1, ../sass/layouts/_header.scss */
 .topbar {
   width: 100%;
   text-align: center;
   padding: 1rem 0; }
-  /* line 7, ../sass/layouts/_header.scss */
   .topbar__logo {
     width: 30%; }
 
-/* line 1, ../sass/layouts/_footer.scss */
 .footer {
   position: fixed;
   display: -webkit-box;
@@ -187,49 +167,39 @@ main {
   font-size: 2em;
   font-family: "Roboto", sans-serif;
   padding: 1.5rem; }
-  /* line 13, ../sass/layouts/_footer.scss */
   .footer__contact, .footer__legal-notice {
     position: relative; }
-    /* line 16, ../sass/layouts/_footer.scss */
     .footer__contact:hover, .footer__legal-notice:hover {
       -webkit-animation: wiggle 5s ease-in;
               animation: wiggle 5s ease-in; }
-  /* line 20, ../sass/layouts/_footer.scss */
   .footer a {
     text-decoration: none;
     color: #FEC85F; }
   @media all and (max-width: 768px) {
-    /* line 1, ../sass/layouts/_footer.scss */
     .footer {
       font-size: 1rem; } }
 
-/* line 1, ../sass/layouts/_menu-detail.scss */
 .menu {
   padding: 5% 10%;
   font-size: 1.5rem;
   line-height: 3rem; }
-  /* line 6, ../sass/layouts/_menu-detail.scss */
   .menu__header {
     text-align: center;
     padding: 3rem 0 5rem 0; }
-    /* line 9, ../sass/layouts/_menu-detail.scss */
     .menu__header__header__name {
       font-size: 3rem;
       padding-bottom: 3rem; }
-  /* line 14, ../sass/layouts/_menu-detail.scss */
   .menu .line-left, .menu .line-right {
     display: inline-block;
     border: none;
     height: 0.3rem;
     width: 33%; }
-  /* line 20, ../sass/layouts/_menu-detail.scss */
   .menu-section {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: center;
     position: relative; }
-    /* line 25, ../sass/layouts/_menu-detail.scss */
     .menu-section::after {
       content: "";
       background-color: #3d1319;
@@ -240,24 +210,46 @@ main {
       bottom: 0;
       -webkit-transition: width 150ms;
       transition: width 150ms; }
-    /* line 36, ../sass/layouts/_menu-detail.scss */
     .menu-section:hover::after {
       width: 100%; }
-  /* line 42, ../sass/layouts/_menu-detail.scss */
   .menu--chic-francais {
     background-color: #fff5fe;
     font-family: "Roboto", sans-serif; }
-    /* line 21, ../sass/utils/_mixins.scss */
     .menu--chic-francais .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
+      /*&__logo
+      {
+      	font-size: 9rem;
+      	@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+      	{
+      		@include degrade($nom-restaurant, color-logo);
+      	}
+      }*/ }
+      .menu--chic-francais .menu__header__name {
+        position: relative;
+        padding: 1rem;
+        background: white;
+        mix-blend-mode: multiply; }
+        .menu--chic-francais .menu__header__name::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
+          background: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
+          mix-blend-mode: screen; }
+=======
       background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
       background: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
       -webkit-background-clip: text;
       color: transparent; }
-      /* line 30, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__header__logo {
         font-size: 9rem; }
-    /* line 39, ../sass/utils/_mixins.scss */
+>>>>>>> master
     .menu--chic-francais .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -266,68 +258,67 @@ main {
           -ms-flex-align: center;
               align-items: center; }
       @media all and (max-width: 768px) {
-        /* line 39, ../sass/utils/_mixins.scss */
         .menu--chic-francais .desktop-row {
           display: block; } }
-      /* line 44, ../sass/utils/_mixins.scss */
       .menu--chic-francais .desktop-row__plat {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
         @media all and (max-width: 768px) {
-          /* line 44, ../sass/utils/_mixins.scss */
           .menu--chic-francais .desktop-row__plat {
             font-size: 1.1rem; } }
-      /* line 49, ../sass/utils/_mixins.scss */
       .menu--chic-francais .desktop-row__prix {
         font-weight: bold; }
         @media all and (max-width: 768px) {
-          /* line 49, ../sass/utils/_mixins.scss */
           .menu--chic-francais .desktop-row__prix {
             text-align: right; } }
-    /* line 55, ../sass/utils/_mixins.scss */
     .menu--chic-francais .menu__starter {
       color: #c67412; }
-      /* line 57, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__starter .line-left {
         background: #c67412; }
-      /* line 61, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__starter .line-right {
         background: #c67412; }
-    /* line 66, ../sass/utils/_mixins.scss */
     .menu--chic-francais .menu__course {
       color: #a56799; }
-      /* line 68, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__course .line-left {
         background: #a56799; }
-      /* line 72, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__course .line-right {
         background: #a56799; }
-    /* line 77, ../sass/utils/_mixins.scss */
     .menu--chic-francais .menu__dessert {
       color: #6e4ccc; }
-      /* line 79, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__dessert .line-left {
         background: #6e4ccc; }
-      /* line 83, ../sass/utils/_mixins.scss */
       .menu--chic-francais .menu__dessert .line-right {
         background: #6e4ccc; }
-  /* line 45, ../sass/layouts/_menu-detail.scss */
   .menu--note-enchantee {
     background-color: #fcdfdb;
     font-family: "Dancing Script", cursive; }
-    /* line 21, ../sass/utils/_mixins.scss */
     .menu--note-enchantee .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
+      /*&__logo
+      {
+      	font-size: 9rem;
+      	@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+      	{
+      		@include degrade($nom-restaurant, color-logo);
+      	}
+      }*/ }
+      .menu--note-enchantee .menu__header__name {
+        position: relative;
+        padding: 1rem;
+        background: white;
+        mix-blend-mode: multiply;
+        color: #3d1319; }
+=======
       color: #3d1319; }
-      /* line 30, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__header__logo {
         font-size: 9rem;
         background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
         background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
         -webkit-background-clip: text;
         color: transparent; }
-    /* line 39, ../sass/utils/_mixins.scss */
+>>>>>>> master
     .menu--note-enchantee .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -336,67 +327,76 @@ main {
           -ms-flex-align: center;
               align-items: center; }
       @media all and (max-width: 768px) {
-        /* line 39, ../sass/utils/_mixins.scss */
         .menu--note-enchantee .desktop-row {
           display: block; } }
-      /* line 44, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .desktop-row__plat {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
         @media all and (max-width: 768px) {
-          /* line 44, ../sass/utils/_mixins.scss */
           .menu--note-enchantee .desktop-row__plat {
             font-size: 1.1rem; } }
-      /* line 49, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .desktop-row__prix {
         font-weight: bold; }
         @media all and (max-width: 768px) {
-          /* line 49, ../sass/utils/_mixins.scss */
           .menu--note-enchantee .desktop-row__prix {
             text-align: right; } }
-    /* line 55, ../sass/utils/_mixins.scss */
     .menu--note-enchantee .menu__starter {
       color: #3d1319; }
-      /* line 57, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__starter .line-left {
         background: #3d1319; }
-      /* line 61, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__starter .line-right {
         background: #3d1319; }
-    /* line 66, ../sass/utils/_mixins.scss */
     .menu--note-enchantee .menu__course {
       color: #3d1319; }
-      /* line 68, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__course .line-left {
         background: #3d1319; }
-      /* line 72, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__course .line-right {
         background: #3d1319; }
-    /* line 77, ../sass/utils/_mixins.scss */
     .menu--note-enchantee .menu__dessert {
       color: #3d1319; }
-      /* line 79, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__dessert .line-left {
         background: #3d1319; }
-      /* line 83, ../sass/utils/_mixins.scss */
       .menu--note-enchantee .menu__dessert .line-right {
         background: #3d1319; }
-  /* line 48, ../sass/layouts/_menu-detail.scss */
   .menu--delice-papilles {
     background-color: #edefef;
     font-family: "Dancing Script", cursive; }
-    /* line 21, ../sass/utils/_mixins.scss */
     .menu--delice-papilles .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
+      /*&__logo
+      {
+      	font-size: 9rem;
+      	@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+      	{
+      		@include degrade($nom-restaurant, color-logo);
+      	}
+      }*/ }
+      .menu--delice-papilles .menu__header__name {
+        position: relative;
+        padding: 1rem;
+        background: white;
+        mix-blend-mode: multiply; }
+        .menu--delice-papilles .menu__header__name::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
+          background: linear-gradient(to right, #0228dd 0%, #229df9 100%);
+          mix-blend-mode: screen; }
+=======
       background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
       background: linear-gradient(to right, #0228dd 0%, #229df9 100%);
       -webkit-background-clip: text;
       color: transparent; }
-      /* line 30, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__header__logo {
         font-size: 9rem; }
-    /* line 39, ../sass/utils/_mixins.scss */
+>>>>>>> master
     .menu--delice-papilles .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -405,67 +405,76 @@ main {
           -ms-flex-align: center;
               align-items: center; }
       @media all and (max-width: 768px) {
-        /* line 39, ../sass/utils/_mixins.scss */
         .menu--delice-papilles .desktop-row {
           display: block; } }
-      /* line 44, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .desktop-row__plat {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
         @media all and (max-width: 768px) {
-          /* line 44, ../sass/utils/_mixins.scss */
           .menu--delice-papilles .desktop-row__plat {
             font-size: 1.1rem; } }
-      /* line 49, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .desktop-row__prix {
         font-weight: bold; }
         @media all and (max-width: 768px) {
-          /* line 49, ../sass/utils/_mixins.scss */
           .menu--delice-papilles .desktop-row__prix {
             text-align: right; } }
-    /* line 55, ../sass/utils/_mixins.scss */
     .menu--delice-papilles .menu__starter {
       color: #000000; }
-      /* line 57, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__starter .line-left {
         background: #0228dd; }
-      /* line 61, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__starter .line-right {
         background: #0228dd; }
-    /* line 66, ../sass/utils/_mixins.scss */
     .menu--delice-papilles .menu__course {
       color: #000000; }
-      /* line 68, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__course .line-left {
         background: #0670f3; }
-      /* line 72, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__course .line-right {
         background: #0670f3; }
-    /* line 77, ../sass/utils/_mixins.scss */
     .menu--delice-papilles .menu__dessert {
       color: #000000; }
-      /* line 79, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__dessert .line-left {
         background: #229df9; }
-      /* line 83, ../sass/utils/_mixins.scss */
       .menu--delice-papilles .menu__dessert .line-right {
         background: #229df9; }
-  /* line 51, ../sass/layouts/_menu-detail.scss */
   .menu--palette-gout {
     background-color: #fdfffd;
     font-family: "Dancing Script", cursive; }
-    /* line 21, ../sass/utils/_mixins.scss */
     .menu--palette-gout .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
+      /*&__logo
+      {
+      	font-size: 9rem;
+      	@if(map-get($nom-restaurant,"color-logo-degrade")==true)
+      	{
+      		@include degrade($nom-restaurant, color-logo);
+      	}
+      }*/ }
+      .menu--palette-gout .menu__header__name {
+        position: relative;
+        padding: 1rem;
+        background: white;
+        mix-blend-mode: multiply; }
+        .menu--palette-gout .menu__header__name::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: -webkit-gradient(linear, right top, left top, from(#beff7f), to(#45993e));
+          background: linear-gradient(to left, #beff7f 0%, #45993e 100%);
+          mix-blend-mode: screen; }
+=======
       background: -webkit-gradient(linear, right top, left top, from(#beff7f), to(#45993e));
       background: linear-gradient(to left, #beff7f 0%, #45993e 100%);
       -webkit-background-clip: text;
       color: transparent; }
-      /* line 30, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__header__logo {
         font-size: 9rem; }
-    /* line 39, ../sass/utils/_mixins.scss */
+>>>>>>> master
     .menu--palette-gout .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -474,59 +483,44 @@ main {
           -ms-flex-align: center;
               align-items: center; }
       @media all and (max-width: 768px) {
-        /* line 39, ../sass/utils/_mixins.scss */
         .menu--palette-gout .desktop-row {
           display: block; } }
-      /* line 44, ../sass/utils/_mixins.scss */
       .menu--palette-gout .desktop-row__plat {
         -webkit-box-flex: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
         @media all and (max-width: 768px) {
-          /* line 44, ../sass/utils/_mixins.scss */
           .menu--palette-gout .desktop-row__plat {
             font-size: 1.1rem; } }
-      /* line 49, ../sass/utils/_mixins.scss */
       .menu--palette-gout .desktop-row__prix {
         font-weight: bold; }
         @media all and (max-width: 768px) {
-          /* line 49, ../sass/utils/_mixins.scss */
           .menu--palette-gout .desktop-row__prix {
             text-align: right; } }
-    /* line 55, ../sass/utils/_mixins.scss */
     .menu--palette-gout .menu__starter {
       color: #000000; }
-      /* line 57, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__starter .line-left {
         background: -webkit-gradient(linear, right top, left top, from(#41963c), to(rgba(0, 0, 0, 0)));
         background: linear-gradient(to left, #41963c, rgba(0, 0, 0, 0)); }
-      /* line 61, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__starter .line-right {
         background: -webkit-gradient(linear, left top, right top, from(#41963c), to(rgba(0, 0, 0, 0)));
         background: linear-gradient(to right, #41963c, rgba(0, 0, 0, 0)); }
-    /* line 66, ../sass/utils/_mixins.scss */
     .menu--palette-gout .menu__course {
       color: #000000; }
-      /* line 68, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__course .line-left {
         background: -webkit-gradient(linear, right top, left top, from(#41963c), to(rgba(0, 0, 0, 0)));
         background: linear-gradient(to left, #41963c, rgba(0, 0, 0, 0)); }
-      /* line 72, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__course .line-right {
         background: -webkit-gradient(linear, left top, right top, from(#41963c), to(rgba(0, 0, 0, 0)));
         background: linear-gradient(to right, #41963c, rgba(0, 0, 0, 0)); }
-    /* line 77, ../sass/utils/_mixins.scss */
     .menu--palette-gout .menu__dessert {
       color: #000000; }
-      /* line 79, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__dessert .line-left {
         background: -webkit-gradient(linear, right top, left top, from(#41963c), to(rgba(0, 0, 0, 0)));
         background: linear-gradient(to left, #41963c, rgba(0, 0, 0, 0)); }
-      /* line 83, ../sass/utils/_mixins.scss */
       .menu--palette-gout .menu__dessert .line-right {
         background: -webkit-gradient(linear, left top, right top, from(#41963c), to(rgba(0, 0, 0, 0)));
         background: linear-gradient(to right, #41963c, rgba(0, 0, 0, 0)); }
-  /* line 54, ../sass/layouts/_menu-detail.scss */
   .menu .flex-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -534,7 +528,6 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 58, ../sass/layouts/_menu-detail.scss */
   .menu .menu__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -548,7 +541,6 @@ main {
     font-size: 2rem;
     font-weight: bold;
     margin: 1rem; }
-    /* line 65, ../sass/layouts/_menu-detail.scss */
     .menu .menu__footer__logo {
       font-size: 9rem;
       background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
@@ -556,7 +548,6 @@ main {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
-/* line 1, ../sass/pages/_index-grid.scss */
 .restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,19 +557,16 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  /* line 6, ../sass/pages/_index-grid.scss */
   .restaurant__menu {
     width: 45%;
     margin: 1%;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     overflow: hidden; }
-    /* line 14, ../sass/pages/_index-grid.scss */
     .restaurant__menu img {
       width: 100%;
       -webkit-transition: 0.2s ease;
       transition: 0.2s ease; }
-      /* line 19, ../sass/pages/_index-grid.scss */
       .restaurant__menu img:hover {
         -webkit-transform: scalex(1.2);
                 transform: scalex(1.2); }
