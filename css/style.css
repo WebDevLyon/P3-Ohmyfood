@@ -217,6 +217,7 @@ main {
     font-family: "Roboto", sans-serif; }
     .menu--chic-francais .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
       /*&__logo
       {
       	font-size: 9rem;
@@ -241,6 +242,14 @@ main {
           background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
           background: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
           mix-blend-mode: screen; }
+=======
+      background: -webkit-gradient(linear, left top, right top, from(#c67412), to(#6e4ccc));
+      background: linear-gradient(to right, #c67412 0%, #6e4ccc 100%);
+      -webkit-background-clip: text;
+      color: transparent; }
+      .menu--chic-francais .menu__header__logo {
+        font-size: 9rem; }
+>>>>>>> master
     .menu--chic-francais .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -286,6 +295,7 @@ main {
     font-family: "Dancing Script", cursive; }
     .menu--note-enchantee .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
       /*&__logo
       {
       	font-size: 9rem;
@@ -300,6 +310,15 @@ main {
         background: white;
         mix-blend-mode: multiply;
         color: #3d1319; }
+=======
+      color: #3d1319; }
+      .menu--note-enchantee .menu__header__logo {
+        font-size: 9rem;
+        background: -webkit-gradient(linear, left top, right top, from(#f15c61), to(#f6916a));
+        background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
+        -webkit-background-clip: text;
+        color: transparent; }
+>>>>>>> master
     .menu--note-enchantee .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -345,6 +364,7 @@ main {
     font-family: "Dancing Script", cursive; }
     .menu--delice-papilles .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
       /*&__logo
       {
       	font-size: 9rem;
@@ -369,6 +389,14 @@ main {
           background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
           background: linear-gradient(to right, #0228dd 0%, #229df9 100%);
           mix-blend-mode: screen; }
+=======
+      background: -webkit-gradient(linear, left top, right top, from(#0228dd), to(#229df9));
+      background: linear-gradient(to right, #0228dd 0%, #229df9 100%);
+      -webkit-background-clip: text;
+      color: transparent; }
+      .menu--delice-papilles .menu__header__logo {
+        font-size: 9rem; }
+>>>>>>> master
     .menu--delice-papilles .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -414,6 +442,7 @@ main {
     font-family: "Dancing Script", cursive; }
     .menu--palette-gout .menu__header {
       font-size: 4rem;
+<<<<<<< HEAD
       /*&__logo
       {
       	font-size: 9rem;
@@ -438,6 +467,14 @@ main {
           background: -webkit-gradient(linear, right top, left top, from(#beff7f), to(#45993e));
           background: linear-gradient(to left, #beff7f 0%, #45993e 100%);
           mix-blend-mode: screen; }
+=======
+      background: -webkit-gradient(linear, right top, left top, from(#beff7f), to(#45993e));
+      background: linear-gradient(to left, #beff7f 0%, #45993e 100%);
+      -webkit-background-clip: text;
+      color: transparent; }
+      .menu--palette-gout .menu__header__logo {
+        font-size: 9rem; }
+>>>>>>> master
     .menu--palette-gout .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
