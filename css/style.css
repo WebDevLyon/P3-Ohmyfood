@@ -221,6 +221,7 @@ main {
         position: relative;
         padding: 1rem;
         background: white;
+        font-size: 3rem;
         mix-blend-mode: multiply; }
         .menu--chic-francais .menu__header__name::before {
           content: "";
@@ -284,6 +285,7 @@ main {
         position: relative;
         padding: 1rem;
         background: white;
+        font-size: 3rem;
         mix-blend-mode: multiply;
         color: #3d1319; }
       .menu--note-enchantee .menu__header__logo {
@@ -342,6 +344,7 @@ main {
         position: relative;
         padding: 1rem;
         background: white;
+        font-size: 3rem;
         mix-blend-mode: multiply; }
         .menu--delice-papilles .menu__header__name::before {
           content: "";
@@ -405,6 +408,7 @@ main {
         position: relative;
         padding: 1rem;
         background: white;
+        font-size: 3rem;
         mix-blend-mode: multiply; }
         .menu--palette-gout .menu__header__name::before {
           content: "";
