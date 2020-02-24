@@ -64,6 +64,7 @@
 		margin: 1rem;
 		&__logo
 		{
+			@include tablet{font-size:4rem;};
 			font-size: 9rem;
 			background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
 			-webkit-background-clip: text;

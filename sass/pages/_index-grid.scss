@@ -19,6 +19,7 @@
 			&:hover
 			{
 				@include hoverscale;
+				opacity: 0.33;
 			}
 		}
 	}

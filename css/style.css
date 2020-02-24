@@ -91,18 +91,6 @@ body {
 ol, ul {
   list-style: none; }
 
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
 main {
   margin: 2rem 8% 5.5rem 8%; }
 
@@ -236,6 +224,9 @@ main {
           mix-blend-mode: screen; }
       .menu--chic-francais .menu__header__logo {
         font-size: 9rem; }
+        @media all and (max-width: 768px) {
+          .menu--chic-francais .menu__header__logo {
+            font-size: 4rem; } }
     .menu--chic-francais .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -257,7 +248,8 @@ main {
         font-weight: bold; }
         @media all and (max-width: 768px) {
           .menu--chic-francais .desktop-row__prix {
-            text-align: right; } }
+            text-align: right;
+            font-size: 1rem; } }
     .menu--chic-francais .menu__starter {
       color: #c67412; }
       .menu--chic-francais .menu__starter .line-left {
@@ -295,6 +287,9 @@ main {
         background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
+        @media all and (max-width: 768px) {
+          .menu--note-enchantee .menu__header__logo {
+            font-size: 4rem; } }
     .menu--note-enchantee .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -316,7 +311,8 @@ main {
         font-weight: bold; }
         @media all and (max-width: 768px) {
           .menu--note-enchantee .desktop-row__prix {
-            text-align: right; } }
+            text-align: right;
+            font-size: 1rem; } }
     .menu--note-enchantee .menu__starter {
       color: #3d1319; }
       .menu--note-enchantee .menu__starter .line-left {
@@ -359,6 +355,9 @@ main {
           mix-blend-mode: screen; }
       .menu--delice-papilles .menu__header__logo {
         font-size: 9rem; }
+        @media all and (max-width: 768px) {
+          .menu--delice-papilles .menu__header__logo {
+            font-size: 4rem; } }
     .menu--delice-papilles .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -380,7 +379,8 @@ main {
         font-weight: bold; }
         @media all and (max-width: 768px) {
           .menu--delice-papilles .desktop-row__prix {
-            text-align: right; } }
+            text-align: right;
+            font-size: 1rem; } }
     .menu--delice-papilles .menu__starter {
       color: #000000; }
       .menu--delice-papilles .menu__starter .line-left {
@@ -423,6 +423,9 @@ main {
           mix-blend-mode: screen; }
       .menu--palette-gout .menu__header__logo {
         font-size: 9rem; }
+        @media all and (max-width: 768px) {
+          .menu--palette-gout .menu__header__logo {
+            font-size: 4rem; } }
     .menu--palette-gout .desktop-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -444,7 +447,8 @@ main {
         font-weight: bold; }
         @media all and (max-width: 768px) {
           .menu--palette-gout .desktop-row__prix {
-            text-align: right; } }
+            text-align: right;
+            font-size: 1rem; } }
     .menu--palette-gout .menu__starter {
       color: #000000; }
       .menu--palette-gout .menu__starter .line-left {
@@ -495,6 +499,9 @@ main {
       background: linear-gradient(to right, #f15c61 0%, #f6916a 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+      @media all and (max-width: 768px) {
+        .menu .menu__footer__logo {
+          font-size: 4rem; } }
 
 .restaurant {
   display: -webkit-box;
@@ -517,6 +524,7 @@ main {
       transition: 0.2s ease; }
       .restaurant__menu img:hover {
         -webkit-transform: scalex(1.2);
-                transform: scalex(1.2); }
+                transform: scalex(1.2);
+        opacity: 0.33; }
 
 /*# sourceMappingURL=style.css.map */

@@ -43,6 +43,7 @@
 			}}
 			&__logo
 			{
+				@include tablet{font-size:4rem;};
 				font-size: 9rem;
 				@if(map-get($nom-restaurant,"color-logo-degrade")==true)
 				{
@@ -66,7 +67,10 @@
 			&__prix
 			{
 				font-weight: bold;
-				@include tablet{text-align: right;}
+				@include tablet{
+					text-align: right;
+					font-size: 1rem;
+				}
 			}
 		}
 		& .menu__starter {
