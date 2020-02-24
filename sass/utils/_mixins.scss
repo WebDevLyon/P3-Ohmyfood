@@ -40,14 +40,17 @@
 			@else{
 				color: map-get($nom-restaurant,'color-heading');
 			}}
-			/*&__logo
+			&__logo
 			{
 				font-size: 9rem;
 				@if(map-get($nom-restaurant,"color-logo-degrade")==true)
 				{
-					@include degrade($nom-restaurant, color-logo);
+					font-size: 9rem;
+					background: map-get($nom-restaurant,color-logo);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
 				}
-			}*/
+			}
 		}
 		& .desktop-row
 		{
